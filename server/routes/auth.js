@@ -8,13 +8,13 @@ const userSignupValidator=require('../validator/index')
 //     res.send('hi routes')
 // })
 
-router.get('/',sayController)
+//router.get('/',sayController)
 router.post('/signup',userSignupValidator,signup)
 router.post('/signin',signin)
 router.get("/signout", signout);
-router.get('/hello',requireSignin, (req,res)=>{
-    res.send('hi routes')
-})
+// router.get('/hello',requireSignin, (req,res)=>{
+//     res.send('hi routes')
+// })
 
 
 module.exports=router
