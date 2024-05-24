@@ -7,11 +7,12 @@ const cors = require('cors');
 const expressValidator = require('express-validator');
 require('dotenv').config();
 
-require('dotenv').config();
+
 
 //imnport routes
 const authRoute=require('./routes/auth')
 const userRoute=require('./routes/user')
+const categoryRoute=require('./routes/category')
 
 // app
 const app = express();
@@ -37,6 +38,7 @@ app.use(cors());
 //app.use(useRoute)
 app.use('/api',authRoute)
 app.use('/api',userRoute)
+app.use('/api',categoryRoute)
 
 
 

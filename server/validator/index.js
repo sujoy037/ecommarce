@@ -21,4 +21,6 @@ const userSignupValidator = (req, res, next) => {
     next();
 };
 
+
+
 module.exports=userSignupValidator
